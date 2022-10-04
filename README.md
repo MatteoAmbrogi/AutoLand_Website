@@ -1,2 +1,8 @@
-# AutoLand_Website
-Sito web per l’acquisto e la vendita di autovetture.
+# AutoLand
+Sito web per l’acquisto e la vendita di autovetture, in grado di mettere in contatto i clienti con le concessionarie registrate sulla piattaforma. Lo scopo del progetto è stato quello di creare una pagina web attraverso l’utilizzo di HTML5, CSS3, JavaScript, PHP e AJAX.
+## Manuale di funzionamento
+### Accesso Utente
+Eseguito l'accesso l'utente potrà visualizzare le auto in vendita nel sito. Attraverso la barra di navigazione si può accedere alle varie categorie di automobili oppure andare direttamente nella pagina di ricerca. Cliccando su un'auto si accede alla pagina relativa a tutti i dettagli dell'auto e attraverso i bottoni è possibile contattare il rivenditore per poter eventualmente acquistare l'auto. Cliccando sul nome della concessionaria vengono visualizzate tutte le sue informazioni, tra cui anche tutte le auto che ha messo in vendita sul sito. L'utente può aggiungere le auto ai preferiti attraverso la stella in alto a destra presente su ogni auto. Nella pagina relativa all'account utente sono presenti tutte le informazioni dell'utente, con anche la possibilità di modificarle, e vengono raccolte anche tutte le auto che l'utente ha aggiunto ai preferiti.
+
+### Accesso Concessionaria
+Eseguito l'accesso come concessionaria sarà possibile visualizzare tutte le auto e navigare attraverso la barra di navigazione per vedere tutto ciò che è in vendita sul sito. Nella pagina relativa all'account della concessionaria vengono visualizzate tutte le informazioni della concessionaria ed è possibile modificarle. Nella parte finale della pagina l'amministratore può andare ad aggiungere nuove auto oppure modificare o eliminare auto già inserite sul sito.
