@@ -1,0 +1,222 @@
+/* div che contiene tutto eccetto ajax */
+.dettagli_concessionaria{
+    
+    margin-top: 26px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+  
+}
+
+
+/* prima div con foto e nome concessionaria*****/
+.dettagli_conc_div_1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* foto auto */
+.div_poster{
+    width: 300px;
+    height: 300px;
+    background-color:rgb(233, 232, 232);
+    border: 1px solid grey;
+    position: relative;
+    
+    margin-right: 60px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.div_poster img{
+    /* modalita per centrare veritcalmente la foto */
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* div nome e luogo */
+.div_nome_luogo{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div_nome_luogo span{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    display: inline-block;
+}
+
+#Nome{
+    font-weight: 700;
+    color: #003e70;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+/* div contatti *******************************/
+.div_contatti{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.div_contatti_bottone{
+   
+    min-width: 220px;
+
+    background-color: #FF6600;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 0 16px;
+    height: 50px;
+    box-shadow: none;
+    cursor: pointer;
+
+    margin-top: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    outline: none;
+}
+
+.div_contatti_bottone:hover{
+    background-color: #D95600;
+}
+
+.div_contatti img{
+    width: 20px;
+    height: 20px;
+}
+
+.div_contatti span{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    margin-left: 8px;
+    font-family: Verdana, sans-serif;
+}
+
+
+.div_contatti_bottone.chiama{
+    margin-right: 16px;
+}
+
+#Numero{
+    display: none;
+    cursor: text;
+    user-select: text;
+}
+
+/* descrizione *******************************/
+.div_descrizione{
+    margin-bottom: 24px;
+}
+.div_titolo{
+    display: inline-block;
+    font-size: 25px;
+    color: #003e70;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+
+    /* linea sotto il titolo */
+    border-bottom-color: coral;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-radius: 2px;
+}
+
+.div_descrizione span{
+    font-size: 17px;
+    line-height: 1.5;
+}
+/* orari */
+.div_1_orari{
+    display: inline-flex;
+    flex-direction: column;
+}
+.div_2_orari{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid #c4c4c4;
+    padding: 4px 0;
+}
+
+.giorno{
+    width: 200px;
+    font-weight: 600;
+}
+
+.div_2_orari:last-of-type{
+    border-bottom: 0;
+}
+
+/*  *******************************************/
+
+
+/* mobile ************************************/
+@media only screen and (max-width: 650px){
+    .div_poster{
+        width: 250px;
+        height: 250px;
+    }
+
+    .div_nome_luogo span{
+        font-size: 21px;
+    }
+
+    #Nome{
+        font-size: 30px;
+    }
+
+    .div_contatti span{
+        font-size: 14px;
+    }
+    .div_titolo{
+        font-size: 23px;
+    }
+    .div_descrizione span{
+        font-size: 14px;
+    }
+}
+/* schermi di grandi dimensioni *****************/
+@media only screen and (min-width: 1400px){
+    .div_poster{
+        width: 325px;
+        height: 325px;
+    }
+
+    .div_nome_luogo span{
+        font-size: 25px;
+    }
+
+    #Nome{
+        font-size: 40px;
+    }
+
+    .div_contatti span{
+        font-size: 16px;
+    }
+    .div_titolo{
+        font-size: 27px;
+    }
+    .div_descrizione span{
+        font-size: 18px;
+    }
+}

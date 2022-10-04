@@ -1,0 +1,139 @@
+/* div che contiene tutto eccetto ajax */
+.dettagliUtente{
+    
+    margin-top: 26px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+  
+}
+
+/* prima div con foto e nome account*****/
+.dettagliUtente_div1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* div contenente foto e pulsante modifica */
+.immagineProfilo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+/* foto profilo */
+.div_poster{
+    width: 300px;
+    height: 300px;
+    background-color:rgb(233, 232, 232);
+    border: 1px solid grey;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.div_poster img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* info Destra *********************/
+.infoDestra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+#username{
+    text-transform: uppercase;
+    color: #003e70;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+/* info *************************/
+.info{
+    margin-bottom: 5px;
+}
+
+/* titolo *****************/
+.div_titolo{
+    display: inline-block;
+    font-size: 25px;
+    color: #003e70;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+
+    /* linea sotto il titolo */
+    border-bottom-color: coral;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-radius: 2px;
+}
+
+
+/* altro *******************/
+.modifica{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid grey;
+    background-color:rgb(233, 233, 233);
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.modifica:hover{
+    background-color: rgb(180, 180, 180);
+}
+.foto{
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+
+.titoli{
+    font-weight: 700;
+    font-size: 25px;
+}
+.testo{
+    font-size: 18px;
+}
+.titolo{
+    font-weight: 600;
+    color: black;
+}
+
+/* mobile ************************************/
+@media only screen and (max-width: 650px){
+    .div_poster{
+        width: 250px;
+        height: 250px;
+    }
+
+    
+}
+/* schermi di grandi dimensioni **************/
+@media only screen and (min-width: 1400px){
+    .div_poster{
+        width: 325px;
+        height: 325px;
+    }
+
+}

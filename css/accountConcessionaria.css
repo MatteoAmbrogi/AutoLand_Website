@@ -1,0 +1,239 @@
+/* div che contiene tutto eccetto ajax */
+.dettagli_concessionaria{
+    
+    margin-top: 26px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+  
+}
+
+
+/* prima div con foto e nome concessionaria*****/
+.dettagli_conc_div_1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* div contenente foto e pulsante modifica */
+.immagineProfilo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+
+/* foto auto */
+.div_poster{
+    width: 300px;
+    height: 300px;
+    background-color:rgb(233, 232, 232);
+    border: 1px solid grey;
+    position: relative;
+    
+    border-radius: 5px;
+}
+
+.div_poster img{
+    /* modalita per centrare veritcalmente la foto */
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+/* div nome e indirizzo */
+.div_nome_luogo{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+.destra{
+    display: flex;
+    align-items: center;
+}
+.nome{
+    font-weight: 700;
+    color: #003e70;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+/* informazioni ****************/
+.informazioni{
+    margin-bottom: 15px;
+}
+.info{
+    margin-bottom: 5px;
+}
+#username{
+    text-transform: uppercase;
+}
+
+/* descrizione *******************************/
+.div_descrizione{
+    margin-bottom: 24px;
+}
+/* titoli */
+.div_titolo{
+    display: inline-block;
+    font-size: 25px;
+    color: #003e70;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+
+    /* linea sotto il titolo */
+    border-bottom-color: coral;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-radius: 2px;
+}
+
+.div_descrizione span{
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* orari */
+.div_1_orari{
+    display: inline-flex;
+    flex-direction: column;
+}
+.div_2_orari{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid #c4c4c4;
+    padding: 4px 0;
+}
+
+.giorno{
+    width: 200px;
+    font-weight: 600;
+}
+
+.div_2_orari:last-of-type{
+    border-bottom: 0;
+}
+
+
+/* bottone aggiungi ************/
+.Bottone_aggiungi{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid;
+    padding: 9px 18px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 28px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+
+    background-color: rgb(58, 194, 58);
+    border-color: rgb(0, 114, 0);
+}
+.Bottone_aggiungi:hover{
+    background-color: rgb(43, 141, 43);
+}
+
+
+
+/* altro *******************/
+.modifica{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid grey;
+    background-color:rgb(233, 233, 233);
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.modifica:hover{
+    background-color: rgb(180, 180, 180);
+}
+.foto{
+    margin-top: 15px;
+    margin-left: 0;
+}
+.nomargin{
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.testo{
+    font-size: 18px;
+}
+.titolo{
+    font-weight: 600;
+    color: black;
+}
+
+
+
+/* mobile ************************************/
+@media only screen and (max-width: 650px){
+    .div_poster{
+        width: 250px;
+        height: 250px;
+    }
+
+    .div_nome_luogo{
+        font-size: 21px;
+    }
+
+    .nome{
+        font-size: 30px;
+    }
+
+    .div_titolo{
+        font-size: 23px;
+    }
+    .div_descrizione span{
+        font-size: 14px;
+    }
+}
+/* schermi di grandi dimensioni *****************/
+@media only screen and (min-width: 1400px){
+    .div_poster{
+        width: 325px;
+        height: 325px;
+    }
+
+    .div_nome_luogo{
+        font-size: 25px;
+    }
+
+    .nome{
+        font-size: 40px;
+    }
+
+    .div_titolo{
+        font-size: 27px;
+    }
+    .div_descrizione span{
+        font-size: 18px;
+    }
+}

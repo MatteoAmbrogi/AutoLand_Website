@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    color: #333333;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6 , #9b59b6);
+    padding: 10px;
+
+}
+
+.contenitore{
+    background: white;
+    max-width: 1000px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+
+}
+
+.titolo{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.sottotitolo{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 13px;
+    color: #241d1d;
+}
+
+.div1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.marca select{
+    outline: none;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.marca select:focus{
+    border-color: #9b59b6;
+
+}
+
+
+.div2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prezzo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.prezzo input{
+    height: 30px;
+    width: 250px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.prezzo input:focus{
+    border-color: #9b59b6;
+
+}
+
+
+/* campi usato */
+.infoUsato{
+    display: block;
+}
+.input-box{
+    width: calc(100%/3 - 20px);
+    margin: 3px 0 8px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 30px;
+
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.input-box input:focus{
+    border-color: #9b59b6;
+
+}
+
+.input-box select{
+    width: 100%;
+    height: 30px;
+
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.input-box select:focus{
+    border-color: #9b59b6;
+
+}
+
+.dettagli{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 3px;
+    
+}
+.dettagli1{
+    font-weight: 600;
+}
+
+.bottone{
+    height: 45px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.bottoneInput{
+    height: 100%;
+    width: 45%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6 , #9b59b6);
+    cursor: pointer;
+}
+.bottoneInput:hover{
+    background: linear-gradient(-135deg, #71b7e6 , #9b59b6);
+}
+.avvisi{
+    color: red;
+    font-weight: 600;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+/* mobile */
+@media only screen and (max-width: 650px){
+    .contenitore{
+        max-width: 100%;
+    }
+    .input-box{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .informazioni{
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+}

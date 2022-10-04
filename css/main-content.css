@@ -1,0 +1,228 @@
+/* poster list ******************************/
+
+.poster_Cars_list{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+	list-style-type: none;
+
+}
+
+
+
+/* items ************************************/
+
+.main.item{
+	width: 364px;
+    height: 355px;
+	
+	border-radius: 5px;
+
+    margin: 10px;
+	background-color: white;   
+}
+
+.main.item:hover{
+	border-bottom-color: rgba(0,0,0,.4);
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.5);
+}
+
+
+/* immagine */
+.poster_car_item{
+	position: relative;
+}
+.poster_car_item img{
+	
+	max-width:100%;
+	max-height:100%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	
+	
+	display: block;
+	overflow: hidden;
+
+}
+
+/* bottone preferiti */
+.bottonePreferiti{
+	z-index: 100;
+	width: 30px;
+	height: 30px;
+	padding: 2px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+	position: absolute;
+	top: 8px;
+	right: 10px;
+
+	border-radius: 50%;
+
+	background-color: white;
+
+}
+.bottonePreferiti._1{
+	background-color: #d4af37;
+}
+
+/* informazioni ******************************/
+
+.div_info_car_item{
+	padding: 5px 12px 8px;
+	font-size: 14px;
+}
+
+/* titolo e prezzo **************************/
+.div_title_car_item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: #003e70;
+	font-size: 20px;
+	line-height: 1.5;
+
+}
+
+.link_title_car_item{
+	overflow: hidden;
+	width: 65%;
+	margin: 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+}
+
+.prezzo_car_item{
+	width: 35%;
+	margin: 0;
+	text-align: right;
+}
+
+/* sottotitolo ****************************/
+
+.div_subtitle_car_item{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 3px 0;
+
+	line-height: 1.5;
+}
+
+.link_subtitle_car_item{
+	overflow: hidden;
+	margin: 0 5px 0 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	font-size: 16px;
+
+}
+
+.nuovo_usato_car_item{
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+/* dettagli auto ****************************/
+.details_car_item{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.BottoniModifica{
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.bottone{
+	margin-left: 50px;
+
+	display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid;
+	color: black;
+    padding:2px 18px;
+    border-radius: 28px;
+    cursor: pointer;
+    outline: none;
+    
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.elimina_auto{
+	margin-left: 0;
+	background-color: rgb(233, 48, 48);
+	border-color: rgb(146, 0, 0);
+}
+.elimina_auto:hover{
+	background-color: rgb(173, 28, 28);
+}
+.modifica_auto{
+	background-color: rgb(51, 51, 247);
+	border-color: rgb(0, 0, 143);
+}
+.modifica_auto:hover{
+	background-color: rgb(28, 28, 179);
+}
+
+
+
+/* warning ********************************/
+.warning{
+	float: left;
+	margin: 5px;
+	width: 50%;
+	position: relative;
+	left: 25%;
+	background-color: rgba(255, 255, 0, 0.2);
+	border: 2px solid rgba(162, 168, 5, 0.8);
+	border-radius: 4px;
+	color: rgb(197, 202, 40);
+	text-align: center;
+	text-shadow: 0 0 3px rgb(255, 255, 255);
+	padding: 5px;
+}
+
+.warningPreferiti{
+	float: left;
+	margin: 5px;
+	width: 50%;
+	position: relative;
+	left: 25%;
+	background-color: rgb(236, 236, 236);
+	border: 2px solid rgb(78, 78, 78);
+	border-radius: 4px;
+	color: gray;
+	text-align: center;
+	text-shadow: 0 0 3px rgb(255, 255, 255);
+	padding: 5px;
+}
+/* altro *****************************/
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+/*  versione mobile */
+@media only screen and (max-width: 650px){
+    
+	
+	/* poster list */
+    .poster_Cars_list{
+        justify-content: space-around;
+    }
+
+}
